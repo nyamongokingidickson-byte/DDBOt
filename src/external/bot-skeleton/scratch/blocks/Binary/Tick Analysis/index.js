@@ -1,0 +1,15 @@
+import './tick';
+import './ticks';
+import './ohlc';
+import './ohlc_values';
+import './readOhlc';
+import './get_ohlc';
+import './check_direction';
+import './tick_analysis';
+import './last_digit';
+import './lastDigitList';
+import './stat';
+import './stat_list';
+import './last_x_digits_comparison';
+import './wait_digit_buy';
+import './trigger_digit';
