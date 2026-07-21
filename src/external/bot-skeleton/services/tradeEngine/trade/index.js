@@ -15,6 +15,7 @@ import Proposal from './Proposal';
 import Purchase from './Purchase';
 import Sell from './Sell';
 import Ticks from './Ticks';
+import ToolKit from './ToolKit';
 import Total from './Total';
 
 const watchBefore = store =>
@@ -62,7 +63,7 @@ const watchScope = ({ store, stopScope, passScope, passFlag }) => {
     });
 };
 
-export default class TradeEngine extends Balance(Purchase(Sell(OpenContract(Proposal(Ticks(Total(class {}))))))) {
+export default class TradeEngine extends Balance(Purchase(Sell(OpenContract(Proposal(Ticks(ToolKit(Total(class {})))))))) {
     constructor($scope) {
         super();
         this.observer = $scope.observer;
@@ -162,4 +163,4 @@ export default class TradeEngine extends Balance(Purchase(Sell(OpenContract(Prop
             this.store.dispatch(proposalsReady());
         }
     }
-}
+                }
